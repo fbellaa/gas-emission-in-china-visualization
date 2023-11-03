@@ -1,0 +1,158 @@
+body {
+  font-family: Calibri;
+  overflow-x: hidden;
+  line-height: 1.3;
+  margin: 0;
+  margin-bottom: 2rem;
+  background-color: #d0e7d2;
+}
+
+.outer-container {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inner-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  background-color: white;
+}
+
+.title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+  font-weight: 700;
+}
+
+.border {
+  border: 1px solid gray;
+}
+
+.subtitle {
+  background-color: #618264;
+  color: white;
+  border-bottom: 1px solid gray;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  grid-column: 1 / -1;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.p {
+  font-size: 1rem;
+  grid-column: 1 / -1;
+  padding: 1rem;
+}
+
+.header {
+  background-color: #618264;
+  padding: 1rem;
+  color: white;
+}
+
+.dropdown-menu {
+  grid-column: 1/-1;
+  padding: 0 1rem 0 1rem;
+}
+
+.main-plot {
+  grid-column: 1/-2;
+}
+
+.slider-container {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.custom-slider {
+  width: 90%;
+}
+
+.rc-slider-track {
+  background-color: #117733;
+}
+
+.rc-slider-dot-active {
+  border-color: #117733;
+}
+
+.rc-slider-handle,
+.rc-slider-handle-click-focused:focus,
+.rc-slider-handle:hover {
+  border: 2px solid #117733;
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging,
+.rc-slider-handle:active {
+  border-color: #117733;
+  box-shadow: 0 0 0 5px #44bb99;
+}
+
+.time-series {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 1rem;
+  margin: auto;
+  padding: 1rem 2rem 1rem 2rem;
+}
+
+.overall-prediction-plot {
+  grid-column: 1/3;
+  align-self: center;
+}
+
+.donut-plot {
+  grid-column: 3/-1;
+}
+
+.overall {
+  grid-column: 1/-1;
+  padding: 2rem;
+  padding-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+}
+
+.text {
+  padding: 1.5rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 1rem;
+}
+
+.predict-animation {
+  grid-column: 2/-1;
+  height: 600px;
+}
+
+.citation {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: grey;
+}
+
+.function {
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
